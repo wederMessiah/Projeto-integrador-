@@ -1,36 +1,107 @@
-*{
-    margin:0
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin:0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center
 
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
-.slider{
-    margin: 0 auto;
-    width:  800px;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Slider */
+.slider {
+    width: 800px;
     height: 400px;
+    margin: 40px auto;
+    position: relative;
     overflow: hidden;
 }
-.slides{
-    width: 400%;
-    height: 400px;
+
+.slides {
     display: flex;
+    width: 300%; /* 3 imagens */
+    height: 100%;
+    transition: all 0.5s ease;
 }
-.slides input{
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slides input {
     display: none;
 }
-.slide{
-    width: 25%;
-    position: relative;
+
+/* Navegação manual */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-.slide img{
-    width: 800px;
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+/* Navegação automática */
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }

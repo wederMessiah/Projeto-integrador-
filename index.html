@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema de controle de vacinas">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sistema de controle de vacinas" />
     <title>Controle de Vacinas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>GovVacinas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+      <h1>GovVacinas</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="slider">
-        <!-- Radio Buttons -->
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
+      <!-- Radio Buttons -->
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
 
-            <!-- Slide Images -->
-            <div class="slide first">
-                <img src="vacina1.jpg" alt="Vacina 1">
-            </div>
-            <div class="slide">
-                <img src="vacina1.jpg" alt="Vacina 2">
-            </div>
-            <div class="slide">
-                <img src="vacina1.jpg" alt="Vacina 3">
-            </div>
-
-            <!-- Navigation Auto -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
+        <!-- Slide Images -->
+        <div class="slide first">
+          <img src="vacina1.jpg" alt="Vacina 1" />
+        </div>
+        <div class="slide">
+          <img src="vacina1.jpg" alt="Vacina 2" />
+        </div>
+        <div class="slide">
+          <img src="vacina1.jpg" alt="Vacina 3" />
         </div>
 
-        <!-- Navigation Manual -->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+        <!-- Navigation Auto -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
         </div>
+      </div>
+
+      <!-- Navigation Manual -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
     </div>
+    <main>
+      <section class="faixetaria">
+        <div class="adultos">
+          <a href="www.com.br">
+            <img src="adulto.jpg" alt="adultos " />
+          </a>
+          <h1>Adultos</h1>
+        </div>
+
+        <div class="idosos">
+          <a href="">
+            <img src="idosos.jpg" alt="Idosos " />
+          </a>
+          <h1>Idosos</h1>
+        </div>
+
+        <div class="criancas">
+          <a href="">
+            <img src="crianca.jpg" alt="crianca" />
+          </a>
+          <h1>crianças</h1>
+        </div>
+        <div class="Jovens">
+          <a href="">
+            <img src="Jovens.jpg" alt="Jovens" />
+          </a>
+          <h2>Jovens</h2>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
